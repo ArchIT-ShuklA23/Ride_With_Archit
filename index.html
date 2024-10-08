@@ -1,12 +1,24 @@
+<!-- <meta name="google-signin-client_id" content="51318744452-c4dgkrs93jcc3nu0o8o1vi7ppq16eogg.apps.googleusercontent.com"> -->
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ride Request</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Ride Request</h1>
+    <div class="beta-banner">Beta Version - Developed by Archit Shukla</div>
     <form id="ride-request-form">
       <div class="form-group">
         <label for="date">Date:</label>
@@ -23,9 +35,13 @@
         <input type="text" id="departure-place" name="departure-place" required>
         <span id="departure-place-error" class="error-message"></span>
       </div>
-      <button id="submit-btn">Submit</button>
+      <button id="submit-btn" type="submit">Submit</button>
     </form>
     <div id="response-message"></div>
+    <div id="response-buttons" style="display: none;">
+      <button id="accept-btn" class="chatbot-btn">Accept</button>
+      <button id="reject-btn" class="chatbot-btn">Reject</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
